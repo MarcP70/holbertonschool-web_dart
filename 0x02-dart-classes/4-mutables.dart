@@ -30,6 +30,6 @@ class Password {
   // Redéfinition de la méthode toString pour afficher le mot de passe
   @override
   String toString() {
-    return 'Your Password is $_password';
+    return 'Your Password is: $_password';
   }
 }
