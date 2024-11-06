@@ -1,11 +1,11 @@
 class User {
-  int id;
-  String name;
-  int age;
-  double height;
+  int? id;
+  String? name;
+  int? age;
+  double? height;
 
   // Constructeur
-  User({required this.id, required this.name, required this.age, required this.height});
+  User({this.id, this.name, this.age, this.height});
 
   // Méthode pour retourner une représentation de l'objet sous forme de Map
   Map<String, dynamic> toJson() {
@@ -30,6 +30,6 @@ class User {
   // Redéfinition de la méthode toString pour un affichage personnalisé
   @override
   String toString() {
-    return 'User(id:$id,name:$name,age:$age,height:$height)';
+    return 'User(id : $id ,name: $name, age: $age, height: $height)';
   }
 }
