@@ -49,6 +49,6 @@ class User {
   // Redéfinition de la méthode toString pour un affichage personnalisé incluant la validité du mot de passe
   @override
   String toString() {
-    return 'User(id : $id,name: $name, age: $age, height: $height, Password: ${_userPassword.isValid()})';
+    return 'User(id : $id ,name: $name, age: $age, height: $height, Password: ${_userPassword.isValid()})';
   }
 }
