@@ -30,6 +30,6 @@ class User {
   // Redéfinition de la méthode toString pour un affichage personnalisé
   @override
   String toString() {
-    return 'User(id: $id, name: $name, age: $age, height: $height)';
+    return 'User(id : $id, name: $name, age: $age, height: $height)';
   }
 }
