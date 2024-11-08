@@ -1,7 +1,7 @@
 import 'dart:convert';
 import '4-util.dart';
 
-Future<dynamic> calculateTotal() async {
+Future<num> calculateTotal() async {
   try {
     // Récupération des données de l'utilisateur
     String userData = await fetchUserData();
@@ -12,7 +12,7 @@ Future<dynamic> calculateTotal() async {
     List<dynamic> userProducts = jsonDecode(userOrdersData);
 
     // Initialisation du total
-    double total = 0;
+    num total = 0;
 
     // Boucle sur chaque produit dans les commandes et ajoute son prix au total
     for (final product in userProducts) {
@@ -23,7 +23,6 @@ Future<dynamic> calculateTotal() async {
     return total;
   } catch (err) {
     // Gestion des erreurs, retourne -1 en cas de problème
-    print("error caught: $err");
     return -1;
   }
 }
