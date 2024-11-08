@@ -2,7 +2,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-Future<void> printRmCharacters() async {
+Future<dynamic> printRmCharacters() async {
   try {
     // Envoyer une requête GET à l'API de Rick et Morty
     final response =
@@ -18,6 +18,6 @@ Future<void> printRmCharacters() async {
 
   } catch (err) {
     // Gérer les erreurs en cas d'échec de la requête
-    print('error caught: $err');
+    return('error caught: $err');
   }
 }
